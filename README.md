@@ -1,5 +1,4 @@
-# from
-https://github.com/gkd-kit/subscription-template
+from https://github.com/gkd-kit/subscription-template
 
 # subscription-template
 
