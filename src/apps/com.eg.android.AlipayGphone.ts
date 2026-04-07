@@ -683,5 +683,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 34,
+      name: '弹窗广告-小程序支付成功界面',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01',
+          matches: [
+            '[text="支付成功"]',
+            '@[clickable=true] > [text="放弃优惠"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/26544521',
+        },
+      ],
+    },
   ],
 });
