@@ -399,5 +399,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 38,
+      name: '弹窗广告-跳转某服务广告',
+      desc: '取消推荐',
+      actionMaximum: 2, // 最多触发2次
+      actionCd: 300,
+      rules: [
+        {
+          activityIds: '.plugin.appbrand.ui.AppBrandUI00',
+          matches:
+            '@TextView[text="取消推荐"] <3 View < View < View[id="shiQuinsertScreen"] <7 WebView < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <3 FrameLayout < FrameLayout <3 RelativeLayout < FrameLayout <2 FrameLayout <2 FrameLayout <2 [vid="w_"]',
+          snapshotUrls: 'https://i.gkd.li/i/26666158',
+        },
+      ],
+    },
   ],
 });
