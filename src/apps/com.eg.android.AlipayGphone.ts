@@ -698,5 +698,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 35,
+      name: '全屏广告-摇动、滑动、点击触发',
+      desc: '点击跳过按钮',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01',
+          matches: [
+            '@View < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <9 ViewGroup <2 ViewGroup < ViewGroup < LinearLayout < RelativeLayout <2 [id="android:id/content"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/27694953',
+        },
+      ],
+    },
   ],
 });
