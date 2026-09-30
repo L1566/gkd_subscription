@@ -689,10 +689,12 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01',
+          action: 'clickCenter', // clickNode可能无效
           matches: [
-            '@TextView[id=null][text = "放弃优惠"][childCount=0][visibleToUser=true] <5 View < View <3 View < WebView[id = null][text = ""] < WebView <2 FrameLayout < [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_pc_container"]',
+            '@TextView[id=null][text="放弃优惠"][childCount=0][visibleToUser=true] <<n [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_pc_container"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/26544521',
         },
@@ -704,10 +706,12 @@ export default defineGkdApp({
       desc: '点击跳过按钮',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App01',
+          action: 'clickCenter', // clickNode可能无效
           matches: [
-            '@View < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <9 ViewGroup <2 ViewGroup < ViewGroup < LinearLayout < RelativeLayout <2 [id="android:id/content"]',
+            '@View[childCount=0][visibleToUser=true] < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <<n [id="android:id/content"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/27694953',
         },
